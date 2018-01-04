@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+body {
+  background-color: lightgrey;
+  margin: 30px;
+  text-align: center; }
+
+h1 {
+  color: darkcyan;
+  font-family: cursive; }
+
+li {
+  list-style-type: none; }
+
+#search {
+  border: none;
+  border-radius: 5px;
+  background-color: lightgreen;
+  height: 30px;
+  font-size: 15px; }
+
+#country-name {
+  height: 20px;
+  width: 200px; }
