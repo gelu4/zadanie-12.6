@@ -5,13 +5,18 @@ $('#search').click(searchCountries);
 
 function searchCountries() {
   	var countryName = $('#country-name').val();
-
+//var err = alert('Cos Nie Zadziałało');
 if(!countryName.length) countryName = 'Poland';
 $.ajax({
   		url: url + countryName,
   		method: 'GET',
-  		success: showCountriesList
-  	});
+  		success: showCountriesList,
+	
+  
+	error: function(response){
+		alert('ERROR!!! Cos Nie Zadziałało')
+	}
+});
 }
 function showCountriesList(resp) {
   countriesList.empty();
